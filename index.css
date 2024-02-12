@@ -1,0 +1,117 @@
+body{
+   
+     background:  linear-gradient(100deg,blue,rgb(19, 3, 3));
+     max-width: 100%;
+     max-height: 100vh;
+
+     
+}
+
+.container{
+    background: rgb(243, 241, 241);
+    width:50%;
+    box-sizing: border-box;
+    max-height: 540px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+   
+    padding-bottom: 10px;
+    margin: 50px auto 23px;
+}
+.container .heading{
+    color: rgb(5, 5, 5);
+    margin-left: 30px;
+}
+
+.container .input-box{
+    display: flex;
+    align-items: end;
+    padding: 10px;
+    justify-content: center;
+
+}
+input{
+    border:none;
+    height:19px;
+    width: 207px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.container .input-box button{
+    margin-left:14px;
+    background:rgb(5, 155, 5);
+    border-radius: 10px;
+    color:white;
+    border:none;
+    height: 22px;
+    width: 44px;
+    cursor: pointer;
+}
+#list-container{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    padding-left: 62px;
+    margin-bottom: 15px;
+    
+}
+ul li::before{
+   content:'';
+   position: absolute;
+   height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(Unchecked.png);
+    background-position: center;
+    background-size: cover;
+    top: 3px;
+    left: 30px;
+}
+
+ul li img{
+    
+    position: absolute;
+    right: 185px;
+    top: 4px;
+    height: 13px;
+    width: 13px;
+    
+}
+ul li .Del-btn{
+    position: absolute;
+    top: 1px;
+    right: 120px;
+    top: 0px;
+    height: 20px;
+    width: 21px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: black;
+}
+
+ul li.checked::before{
+    content:'';
+    position: absolute;
+    height: 13px;
+     width: 13px;
+     border-radius: 50%;
+     cursor: pointer;
+     background-image: url(check.png);
+     background-position: center;
+     background-size: cover;
+     top: 3px;
+     left: 30px;
+}
